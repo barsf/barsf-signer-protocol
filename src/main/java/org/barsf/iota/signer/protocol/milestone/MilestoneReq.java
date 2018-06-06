@@ -1,14 +1,22 @@
 package org.barsf.iota.signer.protocol.milestone;
 
+import com.google.api.client.util.Key;
 import org.barsf.iota.signer.protocol.BaseReq;
 
 public class MilestoneReq extends BaseReq {
 
     public static final String COMMAND = "milestone";
 
+    @Key("hash")
     private String hash;
+    @Key("nodeIndex")
     private Integer nodeIndex;
+    @Key("treeIndex")
     private Integer treeIndex;
+
+    public MilestoneReq() {
+        super(COMMAND);
+    }
 
     public String getHash() {
         return hash;

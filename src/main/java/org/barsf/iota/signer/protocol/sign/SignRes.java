@@ -1,14 +1,12 @@
-package org.barsf.iota.signer.protocol.milestone;
+package org.barsf.iota.signer.protocol.sign;
 
 import com.google.api.client.util.Key;
 import org.barsf.iota.signer.protocol.BaseRes;
 
-public class MilestoneRes extends BaseRes {
+public class SignRes extends BaseRes {
 
     @Key("signature")
     private String signature;
-    @Key("path")
-    private String path;
 
     public String getSignature() {
         return signature;
@@ -16,13 +14,5 @@ public class MilestoneRes extends BaseRes {
 
     public void setSignature(String signature) {
         this.signature = signature;
-    }
-
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
     }
 }

@@ -1,14 +1,14 @@
 package org.barsf.iota.signer.protocol;
 
 
+import com.google.api.client.util.Key;
+
 public class BaseReq {
 
+    @Key("command")
     private String command;
 
-    public BaseReq() {
-    }
-
-    public BaseReq(String command) {
+    protected BaseReq(String command) {
         this.command = command;
     }
 
