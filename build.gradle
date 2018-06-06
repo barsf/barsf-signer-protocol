@@ -24,4 +24,5 @@ uploadArchives {
 }
 
 dependencies {
+    compile group: 'com.google.http-client', name: 'google-http-client-gson', version: '1.23.0'
 }
